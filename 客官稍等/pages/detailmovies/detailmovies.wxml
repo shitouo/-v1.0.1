@@ -1,0 +1,11 @@
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>
+  <view class = "detail-item">
+    <image src = "{{image}}" class="detail-image"></image>      
+    <view class = "detail-title bold">书名：{{title}}</view>
+    <view class = "detail-director">导演：{{director}}</view>
+    <view class = "detail-casts">演员: {{casts0}},{{casts1}},{{casts2}}</view>
+    <view class = "detail-rating">评分: {{rating}}</view>
+    <view class = "detail-year">上映时间: {{year}}</view>
+  </view>  

@@ -1,0 +1,11 @@
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>
+  <view class = "detail-item">
+    <image src = "{{image}}" class="detail-image"></image>      
+    <view class = "detail-title bold">歌曲名：{{title}}</view>
+    <view class = "detail-singer">歌手：{{singer}}</view>
+    <view class = "detail-publisher">发行商: {{publisher}}</view>
+    <view class = "detail-rating">评分: {{rating}}</view>
+    <view class = "detail-year">发行时间: {{year}}</view>
+  </view>  

@@ -1,0 +1,10 @@
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>
+  <view class = "detail-item">
+    <image src = "{{image}}" class="detail-image"></image>      
+    <view class = "detail-title bold">书名：{{title}}</view>
+    <view class = "detail-author">作者：{{author}}</view>
+    <view class = "detail-public">出版社: {{publisher}}</view>
+    <view class = "detail-summary">读者简评: {{summary}}</view>
+  </view>  

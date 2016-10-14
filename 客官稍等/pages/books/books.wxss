@@ -1,0 +1,10 @@
+.item-image {
+  width : 300rpx;
+  height : 400rpx;
+  float : left;
+  margin-right: 20rpx;
+  margin-left: 10rpx;
+} 
+.book-item {
+  margin-top: 20rpx;
+} 

@@ -1,0 +1,15 @@
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>
+<block wx:for = "{{cartoonList}}">
+  <view class = "cartoon-item clearfix">
+    <navigator url = "../detailcartoon/detailcartoon?image={{item.coverImg}}&name={{item.name}}&area={{item.area}}&type={{item.type}}&state={{item.finish}}}&updataTime={{item.lastUpdate}}">
+      <image src = "{{item.coverImg}}" class="item-image"></image>      
+    </navigator>
+    <view class = "item-title bold">{{item.name}}</view>
+    <view class = "item-area">地域：{{item.area}}</view>
+    <view class = "item-type">类型: {{item.type}}</view>
+    <view class = "item-state">状态: {{item.finish == false ? '已完结':'连载中'}}</view>
+    <view class = "item-updataTime">最近更新时间: {{item.lastUpdate}}</view>
+  </view>  
+</block>

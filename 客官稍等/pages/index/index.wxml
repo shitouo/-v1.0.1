@@ -1,0 +1,9 @@
+<swiper indicator-dots="true"  class="swiper">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item class="item">
+      <image src="{{item.url}}" class="img"/>
+      <text class="txt">{{item.text}}</text>
+      <navigator url = "../movies/movies" wx:if="{{item.state}}" class="navi">马上体验</navigator>
+    </swiper-item>
+  </block>
+</swiper>

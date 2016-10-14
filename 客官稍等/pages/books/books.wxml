@@ -1,0 +1,13 @@
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>
+<block wx:for = "{{booksList}}">
+  <view class = "book-item clearfix">
+    <navigator url = "../detailBook/detailBook?image={{item.images.large}}&title={{item.series.title}}&author={{item.author[0]}}&publisher={{item.publisher}}&summary={{item.summary}}">
+      <image src = "{{item.images.large}}" class="item-image"></image>      
+    </navigator>
+    <view class = "item-title bold">{{item.series.title}}</view>
+    <view class = "item-author">作者：{{item.author[0]}}</view>
+    <view class = "item-public">出版社: {{item.publisher}}</view>
+  </view>  
+</block>

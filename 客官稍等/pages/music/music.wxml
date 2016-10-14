@@ -1,0 +1,15 @@
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>
+<block wx:for = "{{musicList}}">
+  <view class = "music-item clearfix">
+    <navigator url = "../detailmusic/detailmusic?image={{item.image}}&title={{item.alt_title}}&singer={{item.author[0].name}}&publisher={{item.attrs.publisher[0]}}&rating={{item.rating.average}}&year={{item.attrs.pubdate[0]}}">
+      <image src = "{{item.image}}" class="item-image"></image>      
+    </navigator>
+    <view class = "item-title bold">{{item.alt_title}}</view>
+    <view class = "item-singer">歌手：{{item.author[0].name}}</view>
+    <view class = "item-publisher">发行商: {{item.attrs.publisher[0]}}</view>
+    <view class = "item-rating">评分: {{item.rating.average}}</view>
+    <view class = "item-year">上映时间: {{item.attrs.pubdate[0]}}</view>
+  </view>  
+</block>

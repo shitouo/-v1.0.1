@@ -1,0 +1,28 @@
+.swiper{
+    height: 1250rpx;
+    width: 100%;
+}
+.item {
+    position : relative
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
+.txt{
+    font-size: 80rpx;
+    position : absolute;
+    font-weight: bold;
+    top: 60%;
+    left: 23%;
+    color: #485859;
+    text-shadow: 2px 2px 2px lightblue;
+}
+.navi{
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    font-size: 80rpx;
+    color: orangered;
+    text-shadow: 2px 2px 2px lightblue;
+}

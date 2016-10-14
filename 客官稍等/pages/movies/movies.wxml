@@ -1,0 +1,15 @@
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>
+<block wx:for = "{{movieList}}">
+  <view class = "movies-item clearfix">
+    <navigator url = "../detailmovies/detailmovies?image={{item.images.large}}&title={{item.title}}&director={{item.directors[0].name}}&casts0={{item.casts[0].name}}&casts1={{item.casts[1].name}}&casts2={{item.casts[2].name}}&rating={{item.rating.average}}&year={{item.year}}">
+      <image src = "{{item.images.large}}" class="item-image"></image>      
+    </navigator>
+    <view class = "item-title bold">{{item.title}}</view>
+    <view class = "item-director">导演：{{item.directors[0].name}}</view>
+    <view class = "item-casts">主演: {{item.casts[0].name}},{{item.casts[1].name}},{{item.casts[2].name}}</view>
+    <view class = "item-rating">评分: {{item.rating.average}}</view>
+    <view class = "item-year">上映时间: {{item.year}}</view>
+  </view>  
+</block>

@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/books/books",
+    "pages/detailBook/detailBook",
+    "pages/detailcartoon/detailcartoon",
+    "pages/detailmovies/detailmovies",
+    "pages/detailmusic/detailmusic",
+    "pages/movies/movies",
+    "pages/music/music",
+    "pages/cartoons/cartoons"
+  ],
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#268dcd",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "list": [{
+      "pagePath": "pages/movies/movies",
+      "iconPath": "image/movie.jpg",
+      "selectedIconPath": "image/movie.jpg",
+      "text": "热映电影"
+    },{
+      "pagePath": "pages/books/books",
+      "iconPath": "image/book.jpg",
+      "selectedIconPath": "image/book.jpg",
+      "text": "热门图书"
+    },{
+      "pagePath": "pages/cartoons/cartoons",
+      "iconPath": "image/cartoon.jpg",
+      "selectedIconPath": "image/cartoon.jpg",
+      "text": "热门漫画"
+    },{
+      "pagePath": "pages/music/music",
+      "iconPath": "image/music.jpg",
+      "selectedIconPath": "image/music.jpg",
+      "text": "热门音乐"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#62b900",
+    "navigationBarTitleText": "客官稍等",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"true"
+  }
+}

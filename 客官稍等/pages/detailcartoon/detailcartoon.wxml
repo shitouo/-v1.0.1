@@ -1,0 +1,6 @@
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>
+  <view wx:for="{{cartoonsList}}">
+      <image src = "{{item.imageUrl}}" class = "img"></image>
+  </view>
